@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Carta</title>
+</head>
+<body>
+    <div id="banner">
+        <h1>Mi restaurante</h1>
+        <p>"A quién madruga, un buen café le ayuda"</p>
+        <p><a href="#">Comencemos</a></p>
+    </div>
+
+    <div class="mycontainer">
+        <div class="card">
+            <img src="https://www.cronista.com/files/image/303/303221/5ffe1f1aa011d.jpg" alt="Brunch">
+            <div class="container">
+                <h4><b>Brunch</b></h4>
+                <p id="description">Ideales para cuando te levantas al mediodía.</p>
+                <p id="description">Combínalos con la infusión que más te guste.</p>
+                <menu>
+                    <li>Avocado toast</li>
+                    <li>Medialuna de jamón y queso</li>
+                    <li>Tostado (jyq, queso y tomate, opción veggie)</li>
+                    <li>Huevos revueltos</li>
+                    <li>Bowl de yogurt con frutas y granola</li>
+                </menu>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://i.pinimg.com/originals/d0/52/91/d05291d82be938d6b233c696afc7b392.png" alt="Cafeteria">
+            <div class="container">
+                <h4><b>Cafeteria</b></h4>
+                <p id="description">Bebida vegetal sin cargo adicional.</p>
+                <menu>
+                    <li>Lágrima</li>
+                    <li>Latte</li>
+                    <li>Latte Especial</li>
+                    <li>Cappuccino</li>
+                    <li>Té (consultar sabores)</li>
+                    <li>Submarino</li>
+                    <li>Americano</li>
+                </menu>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn2.harryanddavid.com/wcsstore/HarryAndDavid/images/catalog/18_7609_30RA_09ex.jpg?height=456&width=418&sharpen=a0.5,r1,t1&auto=webp" alt="Dulce">
+            <div class="container">
+                <h4><b>Dulce</b></h4>
+                <p id="description">Consultar disponibilidad.</p>
+                <menu>
+                    <li>Porción de torta</li>
+                    <li>Porción de budín</li>
+                    <li>Cookie</li>
+                    <li>Medialuna</li>
+                    <li>Croissant</li>
+                </menu>
+            </div>
+        </div>
+    </div>
+
+    <div class="mycontainer2">
+        <div class="card">
+            <img src="https://www.dondeir.com/wp-content/uploads/2016/08/bagels1.jpg" alt="Salado">
+            <div class="container">
+                <h4><b>Salado</b></h4>
+                <p id="description">Consultar disponibilidad.</p>
+                <menu>
+                    <li>Scon de queso</li>
+                    <li>Tostado</li>
+                    <li>Medialuna de jamón y queso</li>
+                    <li>Croissant de jamón y queso</li>
+                </menu>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://media.c5n.com/p/5022c9c6482bd8ab8026db8d27fc5631/adjuntos/326/imagenes/000/160/0000160565/790x0/smart/napolitana-bodegon.png" alt="Platos">
+            <div class="container">
+                <h4><b>Platos</b></h4>
+                <p id="description">Consultar plato del día.</p>
+                <p id="description">Todos los platos incluyen guarnición papas fritas/ensalada/puré de calabaza.</p>
+                <menu>
+                    <li>Hamburguesa clásica</li>
+                    <li>Pastas</li>
+                    <li>Tarta del día</li>
+                    <li>Milanesa (Ternera/Suprema)</li>
+                    <li>Ensalada Caesar</li>
+                </menu>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://e.rpp-noticias.io/xlarge/2016/10/14/100010_266426.png" alt="Bebidas">
+            <div class="container">
+                <h4><b>Bebidas</b></h4>
+                <menu>
+                    <li>Agua</li>
+                    <li>Agua con gas</li>
+                    <li>Gaseosa</li>
+                    <li>Exprimido de naranja</li>
+                    <li>Licuado</li>
+                </menu>
+            </div>
+        </div>
+    </div>
+    <!-- formulario -->
+    <div class="container">
+        <h2>Encuesta de satisfaccion</h2>
+
+        <form id="registroform" action="">
+            <!--nombre-->
+            <div class="row">
+                <div class="col-6">
+                    <label for="nombre">Nombre</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-">
+                    <input type="text" id="nombre" name="nombre" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <span class="error" id="nombreerror"></span>
+                </div>
+            </div>
+            <!--email-->
+            <div class="row">
+                <div class="col-6">
+                    <label for="email">Correo electronico</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <input type="email" id="email" name="email" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <span class="error" id="emailerror"></span>
+                </div>
+            </div>
+            <!--password-->
+            <div class="row">
+                <div class="col-6">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <input type="password" id="password" name="password" class="form-control" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <span class="error" id="passworderror"></span>
+                </div>
+            </div>
+            <div class="row" style="margin-top:10px;">
+                <div class="col-lg-2 col-sm-12">
+                    <button type="submit" class="btn btn-warning form-control">ENVIAR</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Este es el pie de la página de prueba</p>
+        <ul>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-github"></i></a></li>
+        </ul>
+    </div>
+</body>
+</html>
