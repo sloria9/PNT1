@@ -55,47 +55,6 @@ a {
     margin-top: 20px;
 }
 
-
-div.mycontainer, div.mycontainer2 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; 
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-
-  
-    div.mycontainer img, div.mycontainer2 img {
-        max-width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 4px;
-    }
-
-    div.mycontainer div, div.mycontainer2 div {
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-        padding: 16px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        width: calc(33.333% - 20px); 
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-div.container {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-
-
 .footer ul {
     list-style-type: none;
     padding: 0;
@@ -105,3 +64,37 @@ div.container {
         display: inline;
         margin: 0 10px;
     }
+
+div.mycontainer div, div.mycontainer2 div {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.mycontainer img, div.mycontainer2 img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+div.mycontainer, div.mycontainer2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+div.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
