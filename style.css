@@ -35,8 +35,9 @@ h4 {
 /* Banner styles */
 #banner {
     text-align: center;
-    background-image: url(https://media.istockphoto.com/id/524015662/es/foto/taza-de-caf%C3%A9-y-medialunas-sobre-fondo-negro.jpg?s=612x612&w=0&k=20&c=QJ_ArTLApXjbORlYEr3ZwwT0adDy5i1a8viIl0XNfYQ=); /* imagen de portada */
-    background-size: cover;
+    background-image: url(https://www.iniciarunacafeteria.com/storage/2024/03/UC8A1834.jpg); /* imagen de portada */
+    background-position: 0% 45%; /* Enfoca la parte inferior de la imagen */
+    background-size: 95%; /* Haz que la imagen sea un 150% de su tamaño normal, alejando la vista */
     padding: 60px;
     color: white;
     text-shadow: 1px 1px 5px black;
