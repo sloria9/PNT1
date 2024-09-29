@@ -112,18 +112,18 @@
 
     <!-- formulario -->
     <div class="form-div">
-        <h2>Encuesta de satisfaccion</h2>
+        <h2>Encuesta de satisfacción</h2>
 
         <form id="registroform" action="">
-            <!--nombre-->
+            <!-- Nombre -->
             <div class="row">
                 <div class="col-6">
-                    <label for="nombre">Nombre</label>
+                    <label for="nombre">Nombre (obligatorio)</label>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6 col-md-">
-                    <input type="text" id="nombre" name="nombre" class="form-control" />
+                <div class="col-lg-6 col-md-6">
+                    <input type="text" id="nombre" name="nombre" class="form-control" required />
                 </div>
             </div>
             <div class="row">
@@ -131,10 +131,11 @@
                     <span class="error" id="nombreerror"></span>
                 </div>
             </div>
-            <!--email-->
+
+            <!-- Correo electrónico (opcional) -->
             <div class="row">
                 <div class="col-6">
-                    <label for="email">Correo electronico</label>
+                    <label for="email">Correo electrónico</label>
                 </div>
             </div>
             <div class="row">
@@ -147,22 +148,51 @@
                     <span class="error" id="emailerror"></span>
                 </div>
             </div>
-            <!--password-->
+
+            <!-- Puntuaciones -->
             <div class="row">
                 <div class="col-6">
-                    <label for="password">Password</label>
+                    <label>Puntuación de la experiencia (obligatorio)</label>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <input type="password" id="password" name="password" class="form-control" />
+            <div class="row puntuacion">
+                <div class="col">
+                    <input type="radio" id="experiencia1" name="experiencia" value="1" required /> 1
+                    <input type="radio" id="experiencia2" name="experiencia" value="2" required /> 2
+                    <input type="radio" id="experiencia3" name="experiencia" value="3" required /> 3
+                    <input type="radio" id="experiencia4" name="experiencia" value="4" required /> 4
+                    <input type="radio" id="experiencia5" name="experiencia" value="5" required /> 5
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-6">
-                    <span class="error" id="passworderror"></span>
+                    <label>Puntuación de la comida recibida (obligatorio)</label>
                 </div>
             </div>
+            <div class="row puntuacion">
+                <div class="col">
+                    <input type="radio" id="comida1" name="comida" value="1" required /> 1
+                    <input type="radio" id="comida2" name="comida" value="2" required /> 2
+                    <input type="radio" id="comida3" name="comida" value="3" required /> 3
+                    <input type="radio" id="comida4" name="comida" value="4" required /> 4
+                    <input type="radio" id="comida5" name="comida" value="5" required /> 5
+                </div>
+            </div>
+
+            <!-- Comentarios -->
+            <div class="row">
+                <div class="col-6">
+                    <label for="comentarios">Comentarios adicionales</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <textarea id="comentarios" name="comentarios" rows="4" class="form-control"></textarea>
+                </div>
+            </div>
+
+            <!-- Botón de envío -->
             <div class="row" style="margin-top:10px;">
                 <div class="col-lg-2 col-sm-12">
                     <button type="submit" class="btn btn-warning form-control">ENVIAR</button>

@@ -201,6 +201,27 @@ h4 {
             background-color: #e6b800; /* slightly darker yellow on hover */
         }
 
+    .form-div textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        box-sizing: border-box;
+    }
+
+    .form-div input[type="radio"] {
+        margin-left: 10px;
+    }
+
+/* Estilos para las puntuaciones en fila */
+.puntuacion .col {
+    display: flex;
+    gap: 10px; /* Espacio entre las opciones */
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
 /* Footer styles */
 .footer {
     background: #333;
